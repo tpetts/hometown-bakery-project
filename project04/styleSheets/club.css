@@ -1,0 +1,68 @@
+/*
+    Tia Petts
+    11/18/2019
+*/
+
+
+/*Heading Styles*/
+header, h1, h2 {
+  color: maroon;
+}
+
+/*Form Styles*/
+form {
+  border: 2px solid maroon;
+  border-radius: 2em;
+  padding: 2em;
+  margin: 0 auto;
+  background-color: tan;
+  text-align: left;
+}
+
+fieldset {
+  border: 1px solid maroon;
+  color: maroon;
+  margin-bottom: 2em;
+}
+
+select {
+  margin: .5em;
+}
+
+legend {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.prefer {
+  text-align: center;
+  border-radius: .5em;
+}
+
+input[type="text"] {
+  display: block;
+  margin-bottom: 1em;
+}
+
+
+/*Button Styles*/
+div.button {
+  text-align: center;
+  padding: .5em;
+}
+
+input[type="submit"], input[type="reset"] {
+  padding: .8em;
+  border-radius: 2em;
+  border: 2px solid #FFD700;
+  color: #FFF;
+  background-color: maroon;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  color: maroon;
+  border: 2px solid maroon;
+  background-color: #FFD700;
+  transition: 1s;
+  font-weight: bold;
+}

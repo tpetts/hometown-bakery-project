@@ -1,0 +1,52 @@
+/*
+    Tia Petts
+    11/18/2019
+*/
+
+/*Main Styles*/
+Main {
+  text-align: left;
+  padding: 1em;
+}
+
+/*Form Styles*/
+form {
+  border: 2px solid maroon;
+  border-radius: 2em;
+  padding: 2em;
+  margin: 0 auto;
+  background-color: tan;
+  text-align: left;
+}
+
+div label {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+select {
+  margin-bottom: 1em;
+}
+
+textarea {
+  width: 95%;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+
+/*Table Styles*/
+table {
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid maroon;
+}
+
+th, tr, td {
+  border: 2px solid maroon;
+  border-collapse: collapse;
+  text-align: center;
+  padding: .5em;
+  margin: 0 auto;
+}

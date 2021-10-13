@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--
+    Author: Tia Petts
+    Date: 11/18/2019
+-->
+<html lang="en">
+
+<head>
+    <title>Orders & Catering</title>
+    <meta charset="UTF-8"  />
+    <link href="styleSheets/main.css" rel="stylesheet" type="text/css">
+    <link href="styleSheets/order.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+      <img src="images/bakeryLogo.png" alt="Logo" title="Hometown Bakery Logo">
+        <h1>Order Now</h1>
+        <nav>
+          <a href="index.html">Home</a>&hearts;
+          <a href="menu.html">Menu</a>&hearts;
+          <a href="order.html">Catering</a>&hearts;
+          <a href="club.html">Club</a>&hearts;
+          <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+      <form class="bakeryclub" action="http://itins3.madisoncollege.edu/echo.php" method="post">
+        <h2>Contact Information:</h2>
+        <hr>
+
+        <div>
+        <label for="first">First Name:<span class="required"><sup>*required</sup></span></label>
+        <input id="first" type="text" name="first"  placeholder="John" required>
+      </div>
+      <div>
+        <label for="last">Last Name:<span class="required"><sup>*required</sup></span></label>
+        <input id="last" type="text" name="last"  placeholder="Smith" required>
+      </div>
+      <div>
+        <label for="email">Email Address:<span class="required"><sup>*required</sup></span></label>
+        <input id="email" type="text" name="email"  placeholder="johnSmith@somewhere.com" required>
+      </div>
+      <div>
+        <label for="phone">Phone Number:<span class="required"><sup>*required</sup></span></label>
+        <input id="phone" type="text" name="phone" placeholder="111-222-3333" pattern="^\d{3}-\d{3}-\d{4}$" title="Please use the format: ###-###-####" required>
+      </div>
+      <div>
+        <label for="date">Date Needed:<span class="required"><sup>*required</sup></span></label>
+        <input id="date" type="text" name="date" placeholder="mm/dd/yyyy" pattern="^\d{2}-\d{2}-\d{4}$" title="Please use the format: mm/dd/yyyy" required>
+      </div>
+        <hr>
+        <br><br>
+
+        <h2>I want to Order:</h2>
+          <fieldset>
+            <legend>Gourmet Bread</legend>
+            <div>
+            <input type="checkbox" name="breadOrderType" value="white" id="white">
+            <label for="white">White</label>
+          </div>
+            <div>
+            <input type="checkbox" name="breadOrderType" value="wheat" id="wheat">
+            <label for="wheat">Wheat</label>
+            </div>
+            <div>
+            <input type="checkbox" name="breadOrderType" value="whole" id="whole">
+            <label for="whole">Whole Grain</label>
+            </div>
+            <div>
+            <input type="checkbox" name="breadOrderType" value="rye" id="rye">
+            <label for="rye">Rye</label>
+            </div>
+            <div>
+            <input type="checkbox" name="breadOrderType" value="12grain" id="12grain">
+            <label for="12grain">12 Grain</label>
+            </div>
+            <div>
+            <input type="checkbox" name="breadOrderType" value="italian" id="italian">
+            <label for="italian">Italian</label>
+            </div>
+            <div>
+            <input type="checkbox" name="breadOrderType" value="ciabatta" id="ciabatta">
+            <label for="ciabatta">Ciabatta</label>
+            </div>
+            <div>
+            <input type="checkbox" name="breadOrderType" value="walnutRaisin" id="walnutRaisin">
+            <label for="walnutRaisin">Walnut & Raisin</label>
+            </div>
+            <div>
+            <input type="checkbox" name="breadOrderType" value="mediterranean" id="mediterranean">
+            <label for="mediterranean">Mediterranean</label>
+            </div>
+            <div>
+            <input type="checkbox" name="breadOrderType" value="cob" id="cob">
+            <label for="cob">Walnut Cob</label>
+          </div>
+            <br>
+            <select class="qty" name="Qty" id="Qty">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <label for="Qty">Loaf/Loaves</label>
+          </fieldset>
+          <br><br>
+
+          <fieldset>
+            <legend>Gourmet Cakes & Cupcakes</legend>
+            <h3>Cake Style:</h3>
+            <input type="radio" name="cakeStyleType" value="cake" id="cake">
+            <label for="cake">Cake</label>
+            <input type="radio" name="cakeStyleType" value="cupcake" id="cupcake">
+            <label for="cupcake">Cupcake</label>
+            <hr>
+            <h3>Cake Flavors:</h3>
+            <div>
+            <input type="checkbox" name="cakeOrderType" value="vanilla" id="vanilla">
+            <label for="vanilla">Vanilla</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cakeOrderType" value="chocolate" id="Chocolate">
+            <label for="Chocolate">Chocolate</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cakeOrderType" value="red" id="red">
+            <label for="red">Red Velvet</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cakeOrderType" value="chiffon" id="chiffon">
+            <label for="chiffon">Chiffon</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cakeOrderType" value="cheesecake" id="cheese">
+            <label for="cheese">Cheesecake</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cakeOrderType" value="tiramisu" id="tiramisu">
+            <label for="tiramisu">Tiramisu</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cakeOrderType" value="carrot" id="carrot">
+            <label for="carrot">Carrot Cake</label>
+          </div>
+            <hr>
+            <h3>Icing Options:</h3>
+            <input type="radio" name="icing" value="buttercream" id="buttercream">
+            <label for="buttercream">Buttercream</label>
+            <input type="radio" name="icing" value="whipped" id="whipped">
+            <label for="whipped">Whipped</label>
+            <br>
+            <label for="color">Icing Color:</label>
+            <select class="color" name="color" id="color">
+              <option value="red">Red</option>
+              <option value="orange">Orange</option>
+              <option value="yellow">Yellow</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="purple">Purple</option>
+              <option value="white">White</option>
+              <option value="black">Black</option>
+              <option value="gray">Gray</option>
+              <option value="pink">Pink</option>
+            </select>
+
+            <label for="flavor">Icing Flavor:</label>
+            <select class="flavor" name="flavor" id="flavor">
+              <option value="chocolate">Chocolate</option>
+              <option value="vanilla">Vanilla</option>
+              <option value="cherry">Cherry</option>
+              <option value="strawberry">Strawberry</option>
+              <option value="lime">Lime</option>
+              <option value="lemon">Lemon</option>
+              <option value="coffee">Coffee</option>
+              <option value="blueberry">BlueBerry</option>
+              <option value="caramel">Caramel</option>
+              <option value="banana">Banana</option>
+            </select>
+          </fieldset>
+          <br><br>
+
+          <fieldset>
+            <legend>Decadent Cookies</legend>
+            <div>
+            <input type="checkbox" name="cookieOrder" value="chocolate" id="chocolate">
+            <label for="chocolate">Double Chunky Chocolate Chip Cookie</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cookieOrder" value="macadamia" id="macadamia">
+            <label for="macadamia">Chunky White Chip Macadamia Nut Cookie</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cookieOrder" value="velvet" id="velvet">
+            <label for="velvet">Red Velvet Cookie</label>
+          </div>
+          <div>
+            <input type="checkbox" name="cookieOrder" value="pb" id="pb">
+            <label for="pb">Peanut Butter Creme</label>
+          </div>
+          <div>
+            <label for="quantity">Quantity:</label>
+            <input type="text" name="quantity" placeholder="123" id="quantity">
+          </div>
+          </fieldset>
+          <br><br>
+
+          <fieldset>
+            <legend>Donuts</legend>
+            <div>
+            <input type="radio" name="donut" value="longjohn" id="longjohn">
+            <label for="longjohn">Long John</label>
+          </div>
+          <div>
+            <input type="radio" name="donut" value="boston" id="boston">
+            <label for="boston">Boston Creme</label>
+          </div>
+          <div>
+            <input type="radio" name="donut" value="glazed" id="glazed">
+            <label for="glazed">Glazers</label>
+          </div>
+          <div>
+            <input type="radio" name="donut" value="lemon" id="lemon">
+            <label for="lemon">Lemon Bismark</label>
+          </div>
+          <div>
+            <input type="radio" name="donut" value="raspberry" id="raspberry">
+            <label for="raspberry">Raspberry Bismark</label>
+          </div>
+          <div>
+            <label for="thisMany">Quantity:</label>
+            <input type="text" name="thisMany" placeholder="123" id="thisMany">
+          </div>
+          </fieldset>
+          <br><br>
+
+          <fieldset>
+            <legend>Pastries</legend>
+            <div>
+            <input type="radio" name="pastry" value="pastry" id="bear">
+            <label for="bear">Bear Claw</label>
+          </div>
+          <div>
+            <input type="radio" name="pastry" value="pastry" id="baklava">
+            <label for="baklava">Baklava</label>
+          </div>
+          <div>
+            <input type="radio" name="pastry" value="pastry" id="croissant">
+            <label for="croissant">Croissant</label>
+          </div>
+          <div>
+            <input type="radio" name="pastry" value="pastry" id="short">
+            <label for="short">ShortCrust Pastry</label>
+          </div>
+          <div>
+            <label for="oodles">Quantity:</label>
+            <input type="text" name="qty" placeholder="123" id="oodles">
+          </div>
+          </fieldset>
+          <br>
+          <label class="required" for="message">Additional Requests or Requirements:<span class="required"><sup>*required</sup></span></label>
+          <textarea name="message" rows="8" cols="80" id="message" placeholder="Type message here" required></textarea>
+          <br><br>
+          <div class="button">
+            <input type="submit" name="submit" value="Submit Order" />
+            <input type="reset" name="reset" value="Clear Form" />
+          </div>
+      </form>
+    </main>
+
+    <footer>
+      <address class="signature">Developed By: <a href="mailto:tpetts@madisoncollege.edu">tpetts@madisoncollege.edu</a></address>
+    </footer>
+
+</body>
+
+</html>

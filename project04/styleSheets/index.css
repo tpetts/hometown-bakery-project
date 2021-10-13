@@ -1,0 +1,72 @@
+/*
+    Tia Petts
+    11/18/2019
+*/
+
+/*Header-Heading Styles*/
+header img {
+  width: 100%;
+}
+
+header {
+  padding: 2em;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: maroon;
+}
+
+/*Main Styles*/
+main img {
+  max-width: 100%;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+p {
+  margin-top: 1em;
+}
+
+/*Section Styles*/
+section {
+  border: 2px solid teal;
+  border-radius: 1em;
+  background-color: tan;
+  padding: 2em;
+  margin: 1em;
+}
+
+/*Footer Styles*/
+footer {
+  background-color: teal;
+  padding: 3em;
+  color: maroon;
+  font-weight: bold;
+}
+
+/*Link Styles*/
+nav a {
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+nav {
+  text-align: center;
+  letter-spacing: .3em;
+  line-height: 1.2em;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  color: #FFD700;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: maroon;
+}

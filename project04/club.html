@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+    Author: Tia Petts
+    Date: 11/18/2019
+-->
+<html lang="en">
+
+<head>
+    <title>Join Us</title>
+    <meta charset="UTF-8"  />
+    <link href="styleSheets/main.css" rel="stylesheet" type="text/css">
+    <link href="styleSheets/club.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+      <img src="images/bakeryLogo.png" alt="Logo" title="Hometown Bakery Logo">
+        <h1>Join The Club!</h1>
+        <nav>
+          <a href="index.html">Home</a>&hearts;
+          <a href="menu.html">Menu</a>&hearts;
+          <a href="order.html">Catering</a>&hearts;
+          <a href="club.html">Club</a>&hearts;
+          <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <hr>
+
+    <br><br>
+
+    <main>
+      <h2>What Do I get out of joining this club?</h2>
+      <p>Get exclusive rewards and coupons when you join today! Earn points towards a discount for your next order.</p>
+
+
+      <form class="bakeryclub" action="http://itins3.madisoncollege.edu/echo.php" method="post">
+        <label for="first">First Name:</label>
+        <input id="first" type="text" name="first"  placeholder="John" required>
+
+        <label for="last">Last Name:</label>
+        <input id="last" type="text" name="last"  placeholder="Smith" required>
+
+        <label for="email">Email Address:</label>
+        <input id="email" type="text" name="email"  placeholder="johnSmith@somewhere.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input id="phone" type="text" name="phone" placeholder="111-222-3333" pattern="^\d{3}-\d{3}-\d{4}$" title="Please use the format: ###-###-####" required>
+
+
+        <fieldset class="prefer">
+          <legend>Which method of contact do you prefer?</legend>
+          <input id="contactPhone" type="radio" name="contact" value="Phone">
+          <label for="contactPhone">Phone</label>
+          <input id="contactEmail" type="radio" name="contact" value="email">
+          <label for="contactEmail">Email</label>
+        </fieldset>
+
+        <label for="clubs">Which Club would you like to join today?</label>
+        <select id="clubs" name="clubs">
+          <option value="breads">Artisinal Bread Club</option>
+          <option value="donuts">Donut Worry Club</option>
+          <option value="Cakes">Fancy Cake Club</option>
+          <option value="Cupcakes">Cute Cupcake Club</option>
+          <option value="Cookies">Cookie Monster Club</option>
+          <option value="all">All of the clubs!</option>
+        </select>
+
+        <br><br>
+        <input id="yes" type="checkbox" name="GiveCoupons" value="yes" checked>
+        <label for="yes">Yes! I want to receive emails with special promotions and coupons!</label>
+        <br><br>
+        <div class="button">
+          <input type="submit" name="submit" value="Join Today!" id="submit">
+          <input type="reset" name="reset" value="Clear Form" id="clear">
+        </div>
+        <br><br>
+      </form>
+    </main>
+
+    <footer>
+      <address class="signature">Developed By: <a href="mailto:tpetts@madisoncollege.edu">tpetts@madisoncollege.edu</a></address>
+    </footer>
+
+</body>
+
+</html>

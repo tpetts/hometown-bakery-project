@@ -1,0 +1,85 @@
+/*
+    Tia Petts
+    11/18/2019
+*/
+
+body {
+    font-size: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h2 {
+  color: maroon;
+}
+
+/*Form Styles*/
+form {
+  border: 2px solid maroon;
+  border-radius: 2em;
+  padding: 2em;
+  margin: 0 auto;
+  background-color: tan;
+  text-align: left;
+}
+
+fieldset {
+  border: 2px dashed maroon;
+  color: maroon;
+}
+
+legend {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+label.required {
+  color: maroon;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="date"], select {
+  margin-top: .5em;
+  margin-bottom: 1em;
+  width: 40%;
+  display: block;
+}
+
+textarea {
+  border-radius: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: .5em;
+  width: 95%;
+}
+
+sup {
+  color: red;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*Button Styles*/
+div.button {
+  text-align: center;
+  padding: .5em;
+}
+
+input[type="submit"], input[type="reset"] {
+  padding: .8em;
+  border-radius: 2em;
+  border: 2px solid #FFD700;
+  color: #FFF;
+  background-color: maroon;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  color: maroon;
+  border: 2px solid maroon;
+  background-color: #FFD700;
+  transition: 1s;
+  font-weight: bold;
+}

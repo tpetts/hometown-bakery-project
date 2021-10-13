@@ -1,0 +1,111 @@
+/*
+    Tia Petts
+    11/18/2019
+*/
+* {
+  margin: 0;
+}
+
+
+/*Header Styles*/
+header {
+  background-color: teal;
+  padding: 3em;
+}
+
+header img {
+  width: 100%;
+}
+
+h1, h2 {
+  color: maroon;
+}
+
+
+/*Main Styles*/
+main {
+  text-align: center;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+
+main img {
+  max-width: 100%;
+}
+
+
+/*Footer Styles*/
+footer {
+  background-color: teal;
+  padding: 3em;
+  color: maroon;
+  font-weight: bold;
+}
+
+
+/*Link Styles*/
+nav a {
+  text-decoration: none;
+  color: #FFD700;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+nav {
+  text-align: center;
+  letter-spacing: .3em;
+  line-height: 1.2em;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  color: #FFD700;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: maroon;
+}
+
+/*Button Styles*/
+div.button {
+  text-align: center;
+  padding: .5em;
+}
+
+input[type="submit"], input[type="reset"] {
+  padding: .8em;
+  border-radius: 2em;
+  border: 2px solid #FFD700;
+  color: #FFF;
+  background-color: maroon;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  color: maroon;
+  border: 2px solid maroon;
+  background-color: #FFD700;
+  transition: 1s;
+  font-weight: bold;
+}
+
+
+/*Media Query Styles*/
+@media screen and (min-width: 40em) {
+  nav a {
+    display: block;
+  }
+
+  nav a:hover {
+    color: orange;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    background-color: purple;
+  }
+}

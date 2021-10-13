@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+    Author: Tia Petts
+    Date: 11/18/2019
+-->
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8"  />
+    <link href="styleSheets/main.css" rel="stylesheet" type="text/css">
+    <link href="styleSheets/contact.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+      <img src="images/bakeryLogo.png" alt="Logo" title="Hometown Bakery Logo">
+        <h1>Contact Us</h1>
+        <nav>
+          <a href="index.html">Home</a>&hearts;
+          <a href="menu.html">Menu</a>&hearts;
+          <a href="order.html">Catering</a>&hearts;
+          <a href="club.html">Club</a>&hearts;
+          <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+      <section>
+        <h2>Hours</h2>
+        <table>
+          <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+
+          <tr>
+            <td>11am - 9pm</td>
+            <td>11am - 9pm</td>
+            <td>11am - 9pm</td>
+            <td>11am - 9pm</td>
+            <td>11am - 9pm</td>
+            <td>10am - 6pm</td>
+            <td>Closed</td>
+          </tr>
+        </table>
+        <p>**Closed on all major holidays</p>
+      </section>
+      <br><br>
+
+
+      <section>
+        <h2>Location</h2>
+        <p>5309 Hometown St. Madison, WI</p>
+      </section>
+      <br><br>
+
+
+      <section>
+        <h2>Comments, Questions, or Concerns? Send a message!</h2>
+        <form class="bakeryclub" action="http://itins3.madisoncollege.edu/echo.php" method="post">
+          <div>
+          <label for="topic">Subject: </label>
+        </div>
+        <div>
+          <select id="topic" name="Subject">
+            <option value="01happy">Happy Customer</option>
+            <option value="02Kudos">Give Kudos</option>
+            <option value="03Upset">Upset Customer</option>
+            <option value="04?">I have a question</option>
+            <option value="05other">Other/Something else...</option>
+          </select>
+          <textarea name="Message:" rows="8" cols="80" placeholder="Type Message Here" required></textarea>
+        </div>
+
+          <div class="button">
+            <input type="submit" name="Enter" value="submit">
+            <input type="reset" name="Clear" value="Clear">
+          </div>
+        </form>
+      </section>
+    </main>
+    <br><br>
+
+    <hr>
+    <footer>
+      <address class="signature">Developed By: <a href="mailto:tpetts@madisoncollege.edu">tpetts@madisoncollege.edu</a></address>
+    </footer>
+
+</body>
+
+</html>

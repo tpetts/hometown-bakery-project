@@ -1,0 +1,39 @@
+/*
+    Tia Petts
+    11/18/2019
+*/
+h1 {
+  color: maroon;
+}
+
+
+body {
+    font-weight: normal;
+}
+
+section {
+  border: 2px solid maroon;
+  border-radius: 2em;
+  background-color: #EFD961;
+}
+
+dl {
+  line-height: 2em;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: .5em;
+}
+
+dt {
+  font-weight: bold;
+  font-style:oblique;
+  text-decoration: underline;
+  font-size: 1.2em;
+  color: maroon;
+  text-align: left;
+}
+
+dd {
+  text-align: left;
+}
